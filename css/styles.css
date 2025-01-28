@@ -68,7 +68,7 @@ ul li a,
   padding: 40px 30px 0 30px;
   justify-content: space-between;
 }
-.leftPart {
+.heroLeft {
   display: flex;
   flex-direction: column;
   padding-bottom: 60px;
@@ -121,4 +121,6 @@ ul li a,
 .learn {
   font-weight: 700;
   font-size: 14px;
+}
+.heroRight {
 }
