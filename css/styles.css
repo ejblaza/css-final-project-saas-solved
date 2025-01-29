@@ -123,4 +123,58 @@ ul li a,
   font-size: 14px;
 }
 .heroRight {
+  display: flex;
+}
+.heroRight div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 2px 3px black;
+}
+.heroRight div img {
+  width: 48px;
+  height: 48px;
+}
+.heroRight .google,
+.heroRight .googleAds {
+  width: 60px;
+  height: 60px;
+}
+.heroRight .google img,
+.heroRight .googleAds img {
+  width: 40px;
+  height: 40px;
+}
+.google {
+  top: 10px;
+  left: 70px;
+}
+.atlassian {
+  top: 10px;
+  left: 140px;
+}
+.asana {
+  top: 10px;
+  left: 290px;
+}
+.paypal {
+  top: 140px;
+  right: 180px;
+}
+.weave {
+  top: 140px;
+  left: 10px;
+}
+.googleAds {
+  top: 230px;
+  right: 230px;
+}
+.calendar {
+  top: 250px;
+  right: 40px;
 }
