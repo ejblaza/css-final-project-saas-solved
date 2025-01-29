@@ -91,7 +91,7 @@
         </div>
         <div class="bullet">
           <div class="bulletTop">
-            <div class="leftWing wingNull"></div>
+            <div class="leftWing"></div>
             <div class="bulletCircle">
               <div class="circle"></div>
             </div>
@@ -101,7 +101,7 @@
         </div>
         <div class="bullet">
           <div class="bulletTop">
-            <div class="leftWing wingNull"></div>
+            <div class="leftWing"></div>
             <div class="bulletCircle">
               <div class="circle"></div>
             </div>
@@ -111,11 +111,11 @@
         </div>
         <div class="bullet">
           <div class="bulletTop">
-            <div class="leftWing wingNull"></div>
+            <div class="leftWing"></div>
             <div class="bulletCircle">
               <div class="circle"></div>
             </div>
-            <div class="rightWing"></div>
+            <div class="rightWing wingNull"></div>
           </div>
           <div class="bulletTitle">Page layouts</div>
         </div>
@@ -130,7 +130,13 @@
         <div class="pricingTable">
           <div class="plan">
             <div class="planHeader">
-              <div class="planPrice"></div>
+              <div class="planPrice">
+                <div class="priceValue">59</div>
+                <div class="planPeriod">
+                  <div class="slash">/</div>
+                  <div class="month">mo</div>
+                </div>
+              </div>
               <div class="planDivider"></div>
               <p>
                 Start your Front business now. 100% guaranteed money back. No
@@ -138,7 +144,12 @@
               </p>
             </div>
             <div class="planFooter">
-              <div class="planActions"></div>
+              <div class="planActions">
+                <button class="playVideo">
+                  <span class="playIcon"><i class="fa-solid fa-play"></i></span>
+                  <span class="playText">Play Video</span>
+                </button>
+              </div>
               <p>No credit card required.</p>
             </div>
           </div>
@@ -256,10 +267,11 @@
               name="tellMore"
               id="tellMore"
               placeholder="Tell us more about your project, needs, and timeline, please..."
-            >
-            </textarea>
+            ></textarea>
             <div class="form-group">
-              <input type="checkbox" name="yes" id="yes" />
+              <div class="yes">
+                <input type="checkbox" name="yes" />
+              </div>
               <div class="yesLabel">
                 <p>
                   Yes, I'd like to receive occasional marketing emails from
@@ -272,80 +284,86 @@
               </div>
             </div>
           </div>
-          <input type="submit" value="Submit Form" id="submit" />
         </form>
+        <button class="submit">Submit Form</button>
       </div>
     </section>
     <footer>
       <div class="footerContainer">
         <div class="footerLeft">
-          <img src="./assets/logos/logo-front.svg" alt="" />
+          <img src="./assets/logos/logo-front.svg" alt="" class="footerLogo" />
           <div class="companyAbout">
-            <div class="companyLocation">
-              <i class="fa-solid fa-location-arrow"></i>
+            <div class="menuItem">
+              <div class="menuIcon">
+                <i class="fa-solid fa-location-arrow"></i>
+              </div>
               <div class="address">153 Williamson Plaza, Maggieberg</div>
             </div>
-            <div class="companyPhone">
-              <i class="fa-solid fa-phone"></i>
-              <a href="callto:10621099222">+1 (062) 109-9222</a>
+            <div class="menuItem">
+              <div class="menuIcon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <a href="callto:10621099222" class="phoneNumber"
+                >+1 (062) 109-9222</a
+              >
             </div>
           </div>
         </div>
         <div class="footerRight">
-          <div class="footerCompany">
+          <div class="footerColumn">
             <div class="footerColumnTitle">Company</div>
-            <ul class="footerColumnList">
-              <li><a href="#" class="menuItem">About</a></li>
-              <li>
+            <div class="footerColumnList">
+              <div class="menuItem"><a href="#">About</a></div>
+              <div>
                 <div class="menuItem">
-                  <a href="#" class="menuItem">Career</a>
+                  <a href="#">Career</a>
                   <div class="badge">We're hiring</div>
                 </div>
-              </li>
-              <li><a href="#" class="menuItem">Blog</a></li>
-              <li><a href="#" class="menuItem">Customers</a></li>
-              <li><a href="#" class="menuItem">Hire Us</a></li>
-            </ul>
+              </div>
+              <div class="menuItem"><a href="#">Blog</a></div>
+              <div class="menuItem"><a href="#">Customers</a></div>
+              <div class="menuItem"><a href="#">Hire Us</a></div>
+            </div>
           </div>
-          <div class="footerFeatures">
+          <div class="footerColumn">
             <div class="footerColumnTitle">Features</div>
-            <ul class="footerColumnList">
-              <li><a href="#" class="menuItem">Press</a></li>
-              <li><a href="#" class="menuItem">Release Notes</a></li>
-              <li><a href="#" class="menuItem">Integrations</a></li>
-              <li><a href="#" class="menuItem">Pricing</a></li>
-            </ul>
+            <div class="footerColumnList">
+              <div class="menuItem"><a href="#">Press</a></div>
+              <div class="menuItem"><a href="#">Release Notes</a></div>
+              <div class="menuItem"><a href="#">Integrations</a></div>
+              <div class="menuItem"><a href="#">Pricing</a></div>
+            </div>
           </div>
-          <div class="footerDocumentation">
+          <div class="footerColumn">
             <div class="footerColumnTitle">Documentation</div>
-            <ul class="footerColumnList">
-              <li><a href="#" class="menuItem">Support</a></li>
-              <li><a href="#" class="menuItem">Docs</a></li>
-              <li><a href="#" class="menuItem">Status</a></li>
-              <li><a href="#" class="menuItem">API Reference</a></li>
-              <li><a href="#" class="menuItem">Tech Requirements</a></li>
-            </ul>
+            <div class="footerColumnList">
+              <div class="menuItem"><a href="#">Support</a></div>
+              <div class="menuItem"><a href="#">Docs</a></div>
+              <div class="menuItem"><a href="#">Status</a></div>
+              <div class="menuItem"><a href="#">API Reference</a></div>
+              <div class="menuItem"><a href="#">Tech Requirements</a></div>
+            </div>
           </div>
-          <div class="footerResources">
+          <div class="footerColumn">
             <div class="footerColumnTitle">Resources</div>
-            <ul class="footerColumnList">
-              <li>
+            <div class="footerColumnList">
+              <div>
                 <div class="menuItem">
                   <div class="menuIcon">
                     <i class="fa-solid fa-circle-info"></i>
                   </div>
-                  <a href="#" class="menuItem">Help</a>
+                  <a href="#">Help</a>
                 </div>
-              </li>
-              <li>
+              </div>
+              <div>
                 <div class="menuItem">
                   <div class="menuIcon">
                     <i class="fa-solid fa-circle-user"></i>
                   </div>
-                  <a href="#" class="menuItem">Your Account</a>
+                  <a href="#">Your Account</a>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
