@@ -163,34 +163,6 @@ nav ul li a,
   width: 40px;
   height: 40px;
 }
-.google {
-  top: 10px;
-  left: 70px;
-}
-.atlassian {
-  top: 10px;
-  left: 120px;
-}
-.asana {
-  top: 10px;
-  left: 240px;
-}
-.paypal {
-  top: 140px;
-  right: 180px;
-}
-.weave {
-  top: 140px;
-  right: 30px;
-}
-.googleAds {
-  top: 230px;
-  right: 230px;
-}
-.calendar {
-  top: 70px;
-  left: 350px;
-}
 
 .whyFrontSection,
 .whyFrontTitle,
@@ -398,8 +370,6 @@ section p {
   justify-content: center;
 }
 .hireUsTitleContainer {
-  max-width: 370px;
-  min-width: 370px;
   display: flex;
   flex-direction: column;
   gap: 34px;
@@ -477,7 +447,6 @@ form {
   font-weight: 700;
 }
 .form-group {
-  max-width: 392px;
   display: flex;
   gap: 20px;
 }
@@ -529,8 +498,10 @@ textarea + .form-group {
 .ppBlue {
   font-weight: 700;
 }
-.ppGray {
+.ppGray,
+.ppGray:visited {
   color: #677788;
+  text-decoration: none;
   border-bottom: 1px dotted #677788;
 }
 .ppBlue,
@@ -603,6 +574,7 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
+.address,
 .menuItem a,
 .menuItem a:visited {
   text-decoration: none;

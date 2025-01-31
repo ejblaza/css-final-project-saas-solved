@@ -2,6 +2,47 @@
   .trigram {
     display: none;
   }
+
+  .google {
+    top: 10px;
+    left: 70px;
+  }
+  .atlassian {
+    top: 10px;
+    left: 120px;
+  }
+  .asana {
+    top: 10px;
+    left: 240px;
+  }
+  .paypal {
+    top: 140px;
+    right: 180px;
+  }
+  .weave {
+    top: 140px;
+    right: 30px;
+  }
+  .googleAds {
+    top: 230px;
+    right: 230px;
+  }
+  .calendar {
+    top: 70px;
+    left: 350px;
+  }
+
+  .plan {
+    min-width: 290px;
+    max-width: 290px;
+  }
+  .hireUsTitleContainer {
+    max-width: 370px;
+    min-width: 370px;
+  }
+  .form-group {
+    max-width: 392px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -12,6 +53,7 @@
   .heroSection {
     flex-direction: column;
     background-position: initial;
+    gap: 10px;
   }
   .heroLeft {
     min-height: 245px;
@@ -25,6 +67,62 @@
     min-height: 305px;
     justify-content: center;
   }
+  .whyFrontSection {
+    padding: 0 0 80px;
+  }
+  .leftWing,
+  .rightWing {
+    width: 60px;
+  }
+  .bulletTitle {
+    padding: 0;
+    min-width: 177px;
+  }
+
+  .pricingSection {
+    padding-bottom: 60px;
+  }
+  .plansFeaturesList {
+    height: unset;
+    padding: 0 44px;
+  }
+  .pricingTable {
+    flex-direction: column;
+  }
+  .planPrice {
+    align-self: center;
+  }
+  .planFooter {
+    align-items: center;
+  }
+
+  .hireUsSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hireLeft {
+    flex-direction: row;
+    padding: 40px 30px 20px;
+  }
+  .hireRight {
+    padding: 30px;
+    align-self: stretch;
+  }
+  textarea {
+    width: unset;
+    height: 150px;
+  }
+  footer {
+    padding: 80px 30px 40px;
+  }
+  .footerRight {
+    max-width: 417px;
+    flex-wrap: wrap;
+    gap: 49px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .google {
     top: 0px;
     left: 30px;
@@ -51,19 +149,92 @@
   }
   .calendar {
     top: 209px;
-    left: unset;
     right: 20px;
   }
 
+  .leftPad {
+    padding-left: 31px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroSection {
+    padding: 40px 16px 0;
+    align-items: center;
+  }
+  .heroLeft {
+    min-height: 175px;
+  }
+  .mainPunch,
+  .subPunch {
+    text-align: center;
+  }
+  .mainPunch {
+    font-size: 26px;
+    line-height: 31.47px;
+  }
+  .heroRight {
+    width: 328px;
+    justify-content: unset;
+    gap: 20px;
+  }
+  .google {
+    top: 0px;
+    left: unset;
+  }
+  .atlassian {
+    top: 0px;
+    left: 30px;
+  }
+  .asana {
+    top: 0px;
+    left: 68px;
+  }
+  .paypal {
+    top: 0;
+  }
+  .weave {
+    top: 0;
+    left: 85px;
+  }
+  .googleAds {
+    top: 105px;
+    right: 100px;
+  }
+  .calendar {
+    top: 0;
+    left: 220px;
+  }
+
+  section h2 + p {
+    width: unset;
+  }
+
   .whyFrontSection {
-    padding: 0 0 80px;
+    padding: 0 0 60px;
+  }
+  .whyFrontTitle {
+    padding: 0 16px;
+  }
+  .bulletsList {
+    flex-direction: column;
+    gap: 17px;
+  }
+  .bullet {
+    flex-direction: row;
+    padding: 0;
+  }
+  .bulletTop {
+    flex-direction: column;
   }
   .leftWing,
   .rightWing {
-    width: 58.5px;
+    display: none;
   }
   .bulletTitle {
     padding: 0;
+    text-align: start;
+    align-self: center;
   }
 
   .pricingSection {
@@ -71,14 +242,14 @@
   }
   .plansFeaturesList {
     height: unset;
-    padding: 0 44px;
+    padding: 0 16px;
   }
   .pricingTable {
     flex-direction: column;
   }
   .plan {
-    min-width: none;
-    max-width: none;
+    min-width: unset;
+    max-width: unset;
   }
   .planPrice {
     align-self: center;
@@ -86,30 +257,74 @@
   .planFooter {
     align-items: center;
   }
+  .rowOne,
+  .rowTwo {
+    flex-direction: column;
+  }
+  .planFeatureItem {
+    padding: 20px 0;
+  }
 
   .hireUsSection {
+    padding: 0;
+  }
+  .hireLeft {
+    flex-direction: column;
+    padding: 40px 16px 20px;
+  }
+  .hireUsTitleContent,
+  .hireUsPhrase {
+    text-align: center;
+  }
+  .hireUsPhrase {
+    width: inherit;
+  }
+  .hireBottom,
+  .person {
+    align-items: center;
+  }
+  .hireRight {
+    padding: 30px 16px;
+    align-self: stretch;
+  }
+  .form-group {
+    max-width: unset;
+    flex-wrap: wrap;
+  }
+  select {
+    min-width: 246px;
+  }
+  .ppBlue {
+    display: none;
+  }
+  .nowrap {
+    flex-wrap: nowrap;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 80px 16px 40px;
+  }
+  .footerContainer {
     flex-direction: column;
     align-items: center;
   }
-  .hireLeft {
-    flex-direction: row;
-    padding: 40px 30px 20px;
-  }
-  .hireRight {
-    padding: 30px;
-    align-self: stretch;
-  }
-  textarea {
-    min-width: inherit;
-    height: 150px;
-  }
-  footer {
-    padding: 80px 30px 40px;
+  .footerLeft,
+  .companyAbout,
+  .footerColumn,
+  .footerColumnList {
+    align-items: center;
   }
   .footerRight {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
-  .menuItem {
-    flex: 3;
+  .address,
+  .menuItem a,
+  .menuItem a:visited {
+    font-size: 18px;
+  }
+  .footerColumnTitle {
+    font-size: 20px;
   }
 }
