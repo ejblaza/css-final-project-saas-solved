@@ -5,7 +5,7 @@
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 body {
-  width: 1024px;
+  max-width: 1024px;
 }
 .headerContent {
   display: flex;
@@ -456,10 +456,12 @@ section p {
   border-radius: 50%;
 }
 .hireRight {
+  flex: 1;
+}
+form {
   border-radius: 10px;
   padding: 30px;
   background-color: white;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -606,4 +608,14 @@ footer {
   text-decoration: none;
   font-size: 14px;
   color: #677788;
+}
+.menuItem .badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 2px 4px;
+  background-color: #2476ff;
+  color: white;
+  font-size: 8px;
 }

@@ -5,8 +5,111 @@
 }
 
 @media (max-width: 1023px) {
-  ul,
+  nav ul,
   .buyButton {
     display: none;
+  }
+  .heroSection {
+    flex-direction: column;
+    background-position: initial;
+  }
+  .heroLeft {
+    min-height: 245px;
+    align-items: center;
+  }
+  .punchline {
+    width: inherit;
+    align-items: center;
+  }
+  .heroRight {
+    min-height: 305px;
+    justify-content: center;
+  }
+  .google {
+    top: 0px;
+    left: 30px;
+  }
+  .atlassian {
+    top: 0px;
+    left: 140px;
+  }
+  .asana {
+    top: 0px;
+    left: 300px;
+  }
+  .paypal {
+    top: 99px;
+    right: 180px;
+  }
+  .weave {
+    top: 99px;
+    left: 15px;
+  }
+  .googleAds {
+    top: 209px;
+    right: 230px;
+  }
+  .calendar {
+    top: 209px;
+    left: unset;
+    right: 20px;
+  }
+
+  .whyFrontSection {
+    padding: 0 0 80px;
+  }
+  .leftWing,
+  .rightWing {
+    width: 58.5px;
+  }
+  .bulletTitle {
+    padding: 0;
+  }
+
+  .pricingSection {
+    padding-bottom: 60px;
+  }
+  .plansFeaturesList {
+    height: unset;
+    padding: 0 44px;
+  }
+  .pricingTable {
+    flex-direction: column;
+  }
+  .plan {
+    min-width: none;
+    max-width: none;
+  }
+  .planPrice {
+    align-self: center;
+  }
+  .planFooter {
+    align-items: center;
+  }
+
+  .hireUsSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hireLeft {
+    flex-direction: row;
+    padding: 40px 30px 20px;
+  }
+  .hireRight {
+    padding: 30px;
+    align-self: stretch;
+  }
+  textarea {
+    min-width: inherit;
+    height: 150px;
+  }
+  footer {
+    padding: 80px 30px 40px;
+  }
+  .footerRight {
+    flex-wrap: wrap;
+  }
+  .menuItem {
+    flex: 3;
   }
 }
