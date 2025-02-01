@@ -59,7 +59,7 @@ nav ul li a,
 .buyButton {
   color: white;
   background-color: #2476ff;
-  border: transparent;
+  border: 2px solid #2476ff;
   border-radius: 30px;
   padding: 15px 25px;
   font-size: 12px;
@@ -109,7 +109,7 @@ nav ul li a,
   justify-content: center;
   align-items: center;
   padding: 15px 25px;
-  border: transparent;
+  border: 2px solid #2476ff;
   border-radius: 30px;
 }
 .playIcon {
@@ -513,7 +513,7 @@ textarea + .form-group {
 .submit {
   background-color: #2476ff;
   border-radius: 30px;
-  border: transparent;
+  border: 2px solid #2476ff;
   padding: 15px 25px;
   font-size: 12px;
   font-weight: 700;

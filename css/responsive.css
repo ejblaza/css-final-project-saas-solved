@@ -2,39 +2,134 @@
   .trigram {
     display: none;
   }
+  .buyButton,
+  .playVideo,
+  .submit,
+  .playIcon {
+    transition: all 0.5s ease-in-out;
+  }
+  .buyButton:hover,
+  .playVideo:hover,
+  .submit:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #2476ff;
+  }
+  .playVideo:hover .playIcon {
+    background-color: #2476ff;
+    color: white;
+  }
+
+  nav ul a:hover {
+    color: #2476ff;
+    text-decoration: underline;
+  }
 
   .google {
     top: 10px;
     left: 70px;
+    --predefined-left: 70px;
+    animation: appearLeft 2s;
   }
   .atlassian {
     top: 10px;
     left: 120px;
+    --predefined-top: 10px;
+    opacity: 0;
+    animation: appearTop 2s forwards 0.5s;
   }
   .asana {
     top: 10px;
     left: 240px;
+    --predefined-left: 240px;
+    opacity: 0;
+    animation: appearRight 2s forwards 0.5s;
   }
   .paypal {
     top: 140px;
     right: 180px;
+    --predefined-right: 180px;
+    opacity: 0;
+    animation: appearLeft 2s forwards 0.25s;
   }
   .weave {
     top: 140px;
     right: 30px;
+    --predefined-top: 140px;
+    opacity: 0;
+    animation: appearBottom 2s forwards 1.5s;
   }
   .googleAds {
     top: 230px;
     right: 230px;
+    --predefined-top: 230px;
+    opacity: 0;
+    animation: appearBottom 2s forwards 1s;
   }
   .calendar {
     top: 70px;
     left: 350px;
+    --predefined-left: 350px;
+    opacity: 0;
+    animation: appearRight 2s forwards 0.75s;
+  }
+  @keyframes appearLeft {
+    0% {
+      left: calc(var(--predefined-left) - 100px);
+      right: calc(var(--predefined-right) + 100px);
+      transform: rotate(0);
+      opacity: 0;
+    }
+    100% {
+      left: var(--predefined-left);
+      right: var(--predefined-right);
+      transform: rotate(360deg);
+      opacity: 100%;
+    }
+  }
+  @keyframes appearRight {
+    0% {
+      left: calc(var(--predefined-left) + 100px);
+      right: calc(var(--predefined-right) - 100px);
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+    100% {
+      left: var(--predefined-left);
+      right: var(--predefined-right);
+      transform: rotate(0);
+      opacity: 100%;
+    }
+  }
+  @keyframes appearTop {
+    0% {
+      top: calc(var(--predefined-top) - 50px);
+      opacity: 0;
+    }
+    100% {
+      top: var(--predefined-top);
+      opacity: 100%;
+    }
+  }
+  @keyframes appearBottom {
+    0% {
+      top: calc(var(--predefined-top) + 50px);
+      opacity: 0;
+    }
+    100% {
+      top: var(--predefined-top);
+      opacity: 100%;
+    }
   }
 
   .plan {
     min-width: 290px;
     max-width: 290px;
+    transition: all 0.5s ease-in-out;
+  }
+  .plan:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px 5px #00000075;
   }
   .hireUsTitleContainer {
     max-width: 370px;
@@ -42,6 +137,22 @@
   }
   .form-group {
     max-width: 392px;
+  }
+
+  .ppGray,
+  .ppBlue {
+    transition: all 0.5s ease-in-out;
+  }
+  .ppGray:hover,
+  .ppBlue:hover {
+    border-bottom: solid;
+    transform: scale(1.01);
+  }
+
+  .menuItem a:hover,
+  .menuItem a:visited:hover {
+    color: #2476ff;
+    text-decoration: underline;
   }
 }
 
